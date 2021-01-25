@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p> Please feel free to contact us by phone or using the form below!</p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col mt-3">
+            <p style="font-weight:bold" ;>Business Hours:</p>
+            <p>Mon-Sat:  7am-8pm</p>
+        </div>
+        <div class="col mt-3">
+            <p style="font-weight:bold">Phone Number:</p>
+            <p>709-243-5678</p>
+            <p>815-000-0000</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col mt-3">
+            <p style="font-weight:bold">Send us a message:</p>
+        </div>
+    </div>
+
+
+    <form id="form" method="post" role="form">
+        <div class="form-row">
+            <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+                <div class="validate"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
+            <div class="validate"></div>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" id=message rows="5" required data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+        </div>
+        <div class="text-center"><button class="btn btn-primary" type="submit" id="button">Send Message</button></div>
+    </form>
+</div>

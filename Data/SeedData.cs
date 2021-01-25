@@ -76,7 +76,7 @@ namespace CarPro.Data
                             Year = 2008,
                             Mileage = 200000,
                             Price = 5900,
-                            Color = "Ruby",
+                            Color = "Gold",
                             DriveTrain = "4WD"
                         },
 
