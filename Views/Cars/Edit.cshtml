@@ -45,7 +45,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="DriveTrain" class="control-label"></label>
-                <input asp-for="DriveTrain" class="form-control" />
+                <select asp-for="DriveTrain" class="form-control" />
+                <option value="2WD">2WD</option>
+                <option value="4WD">4WD</option>
+                </select>
                 <span asp-validation-for="DriveTrain" class="text-danger"></span>
             </div>
             <div class="form-group">
