@@ -14,19 +14,21 @@ namespace CarPro.Models
         public string Name { get; set; }
 
         [Required]
+        [Display(Name = "Street Address")]
         public string Address { get; set; }
 
         [Required]
         [Display(Name = "Zip Code")]
-        [Range(10000, 99999)]
-        public int ZipCode { get; set; }
+        [StringLength(9, MinimumLength = 5)]
+        public string ZipCode { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         [Display(Name = "Phone Number")]
-        public int PhoneNum { get; set; }
+        public string PhoneNum { get; set; }
 
         public string Manager { get; set; }
 
+        //parent of the car model
         public virtual ICollection<Car> Cars { get; set; }
 
 
